@@ -4,7 +4,7 @@ There are two ways to send messages to a slack channel, one is making an HTTP PO
 
 |  | Webhook | Slack API |
 |------|-------|-------------|
-| Advantage| Easy to use and little to no code requirement. Developers only need to compose the POST payload based on the Slack's requirement and make the POST request. | Slack API offers developer more features to interact with Slack, such as uploading files. |
+| Advantage| Easy to use with little to no coding. Developers only need to compose the POST payload based on the Slack's requirement and make the POST request. | Slack API offers developer more features to interact with Slack, such as attach files to message. |
 |Disadvantage| Features are limited by the supported POST request payload, webhook is mainly used for sending text and image* to slack channel. | Required more coding and cannot use tools, such as curl and Postman, to quickly test the result. |
 
 \* image cannot be send along with the message, it has to be uploaded to an external storage and send the image_url along with the message.
@@ -14,9 +14,8 @@ In this README, we will focus on how to use the webhook to send a message to Sla
 <details>
   <summary>1. Create and obtain Webhook url</summary>
 
-You could ask your manager to provide you an existing one. Or, you can follow the steps in [Link](https://api.slack.com/messaging/webhooks) to set up one for yourself.
+You could ask the manager to share an existing one. Or, you can follow the steps in [Link](https://api.slack.com/messaging/webhooks) to set up one for yourself.
 </details>
-
 
 <details>
   <summary>2. Design POST payload</summary>
