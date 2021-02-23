@@ -24,7 +24,7 @@ You could ask your manager to provide you an existing one. Or, you can follow th
 How you design and structure the payload(a *JSON* object) will determine how your message will look like in the channel message.
 
 Slack have an exhaustive documentation on this topic, see [Link](https://api.slack.com/messaging/composing#message_structure)
-  
+
 Following are a payload example and respective slack message:
 ```java
 {
@@ -86,24 +86,23 @@ There are plenty of tools you could use to make the POST request, in the followi
 
 **cURL** is a light yet powerful command line tool to get and send data using URL syntax.
 
-A basic POST request example using cURL:
-```
-curl -X POST -H 'Content-type:application/json' --data "{\"text\":\"Hello, World!\"}" https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
-```
-<img src="curl-example.png" width="600">
--X, --request \<command\>: Specify request command to use
+  A basic POST request example using cURL:
+  ```
+  curl -X POST -H 'Content-type:application/json' --data "{\"text\":\"Hello, World!\"}" https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+  ```
+  <img src="curl-example.png" width="600">
 
--H, --header \<header/@file\>: Pass custom header(s) to server
+  -X, --request \<command\>: Specify request command to use
 
--d, --data \<data\>: HTTP POST data.
+  -H, --header \<header/@file\>: Pass custom header(s) to server
 
-
-
+  -d, --data \<data\>: HTTP POST data.
 
 **Postman** is a commercial API testing tool with Graphical User Interface. It offers free version but requires user to create an account.
-  
-A basic POST request example using Postman:
-<img src="postman-example.png" width="600"> 
+
+  A basic POST request example using Postman:
+
+  <img src="postman-example.png" width="600"> 
 
 </details>
   
