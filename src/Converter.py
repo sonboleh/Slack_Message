@@ -60,7 +60,7 @@ def test():
     json_string = json.dumps(dataFromBackend)
 
     slack_message = convertToSlackRequiredFormat(json_string)
-    url = 'https://hooks.slack.com/services/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'
+    url = ''
     r = requests.post(url = url, json=slack_message) 
     print(r.text)
 
