@@ -74,12 +74,12 @@ Following are a payload example and respective slack message:
   ]
 }
 ```
-<img src="slack-result.png" width="600"> 
+<img src="img/slack-result.png" width="600"> 
 
 </details>
 
 <details>
-  <summary>3. Make POST request</summary>
+  <summary>3. Test POST request</summary>
   
 There are plenty of tools you could use to make the POST request, in the following, we will introduce two of them, *cURL* and *Postman*.
 
@@ -89,7 +89,7 @@ There are plenty of tools you could use to make the POST request, in the followi
   ```
   curl -X POST -H 'Content-type:application/json' --data "{\"text\":\"Hello, World!\"}" https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
   ```
-  <img src="curl-example.png" width="600">
+  <img src="img/curl-example.png" width="600">
 
   -X, --request \<command\>: Specify request command to use
 
@@ -101,7 +101,7 @@ There are plenty of tools you could use to make the POST request, in the followi
 
   A basic POST request example using Postman:
 
-  <img src="postman-example.png" width="600"> 
+  <img src="img/postman-example.png" width="600"> 
 
 </details>
   
